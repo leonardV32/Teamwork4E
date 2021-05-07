@@ -31,7 +31,7 @@ public class Platformer_test : MonoBehaviour
 
     private void JumpOnperformed(InputAction.CallbackContext obj)
     {
-
+        rb2D.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
     }
 
     private void MoveOnperformed(InputAction.CallbackContext obj)
